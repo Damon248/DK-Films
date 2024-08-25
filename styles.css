@@ -303,7 +303,7 @@ nav {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-client__card__tejas p {
+.client__card__tejas p {
   margin-bottom: 0.5rem;
   color: var(--text-light);
   line-height: 1.75rem;
@@ -396,16 +396,22 @@ client__card__tejas p {
   align-items: center;
   gap: 1rem;
 
-  animation: scroll 45s linear infinite;
+  animation: scroll 120s linear infinite;
 }
 
 .instagram__flex img {
   max-width: 135px;
 }
 
-@keyframes scroll {
+/* @keyframes scroll {
   to {
     transform: translateX(calc(-50% - 0.5rem));
+  }
+} */
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 1rem)); /* Adjust this value */
   }
 }
 
