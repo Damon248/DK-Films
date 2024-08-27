@@ -51,6 +51,10 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+  autoplay: {
+    delay: 3000, // time in milliseconds between slides
+    disableOnInteraction: false, // keeps autoplay running even after user interaction
+  },
 });
 
 ScrollReveal().reveal(".blog__content .section__header", {
@@ -76,4 +80,3 @@ Array.from(instagram.children).forEach((item) => {
   duplicateNode.setAttribute("aria-hidden", true);
   instagram.appendChild(duplicateNode);
 });
-   
