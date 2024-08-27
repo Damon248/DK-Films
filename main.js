@@ -1,4 +1,8 @@
-document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => {
+  if(event.target.tagName === 'IMG'){
+    event.preventDefault()
+  }
+});
 
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
