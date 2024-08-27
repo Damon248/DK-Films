@@ -58,6 +58,7 @@
 img {
   display: flex;
   width: 100%;
+  pointer-events: none;
 }
 
 a {
@@ -615,4 +616,3 @@ nav {
     gap: 2rem;
   }
 }
-    
